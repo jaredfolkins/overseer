@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/jpillora/opts"
-	"github.com/jpillora/overseer"
-	"github.com/jpillora/overseer/fetcher"
+	"github.com/jaredfolkins/overseer"
+	"github.com/jaredfolkins/overseer/fetcher"
 )
 
 func main() {
