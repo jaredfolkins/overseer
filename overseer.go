@@ -47,9 +47,9 @@ type Config struct {
 	//PreUpgrade runs after a binary has been retrieved, user defined checks
 	//can be run here and returning an error will cancel the upgrade.
 	PreUpgrade func(tempBinaryPath string) error
-	//Debug enables all [overseer] logs.
+	//Debug enables all [overwatch] logs.
 	Debug bool
-	//NoWarn disables warning [overseer] logs.
+	//NoWarn disables warning [overwatch] logs.
 	NoWarn bool
 	//NoRestart disables all restarts, this option essentially converts
 	//the RestartSignal into a "ShutdownSignal".
@@ -99,9 +99,9 @@ func Run(c Config) {
 	err := runErr(&c)
 	if err != nil {
 		if c.Required {
-			log.Fatalf("[overseer] %s", err)
+			log.Fatalf("[overwatch] %s", err)
 		} else if c.Debug || !c.NoWarn {
-			log.Printf("[overseer] disabled. run failed: %s", err)
+			log.Printf("[overwatch] disabled. run failed: %s", err)
 		}
 		c.Program(DisabledState)
 		return

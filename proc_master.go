@@ -415,13 +415,13 @@ func (mp *master) fork() error {
 
 func (mp *master) debugf(f string, args ...interface{}) {
 	if mp.Config.Debug {
-		log.Printf("[overseer master] "+f, args...)
+		log.Printf("[overwatch master] "+f, args...)
 	}
 }
 
 func (mp *master) warnf(f string, args ...interface{}) {
 	if mp.Config.Debug || !mp.Config.NoWarn {
-		log.Printf("[overseer master] "+f, args...)
+		log.Printf("[overwatch master] "+f, args...)
 	}
 }
 

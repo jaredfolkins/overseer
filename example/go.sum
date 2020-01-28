@@ -1,0 +1,8 @@
+github.com/aws/aws-sdk-go v1.27.1 h1:MXnqY6SlWySaZAqNnXThOvjRFdiiOuKtC6i7baFdNdU=
+github.com/aws/aws-sdk-go v1.27.1/go.mod h1:KmX6BPdI08NWTb3/sm4ZGu5ShLoqVDhKgpiN924inxo=
+github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af h1:pmfjZENx5imkbgOkpRUYLnmbU7UEFbjtDA2hxJ1ichM=
+github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af/go.mod h1:Nht3zPeWKUH0NzdCt2Blrr5ys8VGpn0CEB0cQHVjt7k=
+github.com/jaredfolkins/overseer v0.0.0-20191216115108-e26c3c66567f h1:5V9lCtnhb2xiy0qA5BggamuO7EV5txfaqrfWbBuOsLw=
+github.com/jaredfolkins/overseer v0.0.0-20191216115108-e26c3c66567f/go.mod h1:jAtjoOHKJGzelfcN2VsTMormtjaFlHb2l7gElpg8WPM=
+github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0 h1:iQTw/8FWTuc7uiaSepXwyf3o52HaUYcV+Tu66S3F5GA=
+github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0/go.mod h1:1NbS8ALrpOvjt0rHPNLyCIeMtbizbir8U//inJ+zuB8=
