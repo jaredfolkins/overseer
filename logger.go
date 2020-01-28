@@ -1,4 +1,4 @@
-package localfetcher
+package overseer
 
 import (
 	logging "github.com/op/go-logging"
