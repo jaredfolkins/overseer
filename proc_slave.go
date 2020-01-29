@@ -2,7 +2,6 @@ package overseer
 
 import (
 	"fmt"
-	"log"
 	"net"
 	"os"
 	"os/signal"

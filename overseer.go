@@ -5,7 +5,6 @@ package overseer
 import (
 	"errors"
 	"fmt"
-	"log"
 	"os"
 	"runtime"
 	"time"
