@@ -43,7 +43,7 @@ package overseer
 // // The input function prints a statement to the user and accepts an input, then returns the input.
 //
 // func input(prompt, location string) string {
-// 	fmt.Printf(prompt, location)
+// 	fmt.Debugf(prompt, location)
 //
 // 	reader := bufio.NewReader(os.Stdin)
 // 	userinput, _ := reader.ReadString([]byte("\n")[0])
@@ -70,7 +70,7 @@ package overseer
 // 		fmt.Println("mv: missing file operand\nTry 'mv -help' for more information")
 // 		os.Exit(0)
 // 	case 1: // If there is one argument
-// 		fmt.Printf("mv: missing destination file operand after '%s'\nTry 'mv -help' for more information.\n", files[0])
+// 		fmt.Debugf("mv: missing destination file operand after '%s'\nTry 'mv -help' for more information.\n", files[0])
 // 		os.Exit(0)
 // 	case 2: // If there are two arguments
 // 		mover(files[0], files[1])
@@ -98,7 +98,7 @@ package overseer
 //
 // 	switch {
 // 	case fileExists(originalLocation) == nil: // If the original file does not exist
-// 		fmt.Printf("mv: cannot stat '%s': No such file or directory\n", originalLocation)
+// 		fmt.Debugf("mv: cannot stat '%s': No such file or directory\n", originalLocation)
 // 		os.Exit(0)
 // 	case fp != nil && !*forceEnabled: // If the destination file does not exist and forceEnabled is disabled
 // 		if fp.IsDir() {
@@ -132,18 +132,18 @@ package overseer
 // 	err := os.Rename(originalLocation, newLocation)
 // 	switch t := err.(type) {
 // 	case *os.LinkError:
-// 		fmt.Printf("Cross-device move. Copying instead\n")
+// 		fmt.Debugf("Cross-device move. Copying instead\n")
 // 		return move_across_devices(originalLocation, newLocation)
 // 	case *os.PathError:
-// 		fmt.Printf("Path error: %q\n", t)
+// 		fmt.Debugf("Path error: %q\n", t)
 // 		return err
 // 	case *os.SyscallError:
-// 		fmt.Printf("Syscall error: %q\n", t)
+// 		fmt.Debugf("Syscall error: %q\n", t)
 // 		return err
 // 	case nil:
 // 		return nil
 // 	default:
-// 		fmt.Printf("Unkown error Type: %T Error: %q", t, t)
+// 		fmt.Debugf("Unkown error Type: %T Error: %q", t, t)
 // 		return err
 // 	}
 // 	return nil

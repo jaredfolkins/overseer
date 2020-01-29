@@ -100,7 +100,7 @@ func Run(c Config) {
 		if c.Required {
 			log.Fatalf("[overwatch] %s", err)
 		} else if c.Debug || !c.NoWarn {
-			log.Printf("[overwatch] disabled. run failed: %s", err)
+			log.Debugf("[overwatch] disabled. run failed: %s", err)
 		}
 		c.Program(DisabledState)
 		return

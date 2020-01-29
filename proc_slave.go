@@ -162,12 +162,12 @@ func (sp *slave) triggerRestart() {
 
 func (sp *slave) debugf(f string, args ...interface{}) {
 	if sp.Config.Debug {
-		log.Printf("[overwatch slave#"+sp.id+"] "+f, args...)
+		log.Debugf("[overwatch slave#"+sp.id+"] "+f, args...)
 	}
 }
 
 func (sp *slave) warnf(f string, args ...interface{}) {
 	if sp.Config.Debug || !sp.Config.NoWarn {
-		log.Printf("[overwatch slave#"+sp.id+"] "+f, args...)
+		log.Debugf("[overwatch slave#"+sp.id+"] "+f, args...)
 	}
 }
